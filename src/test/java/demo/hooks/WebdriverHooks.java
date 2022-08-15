@@ -9,23 +9,24 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriverException;
 
 public class WebdriverHooks {
-  @Before(value = "@Web")
+  @Before(value = "@web")
   public void initializeWebdriver() {
     WebdriverInstance.initialize();
   }
 
-  @After(value = "@Web")
+  @After(value = "@web")
   public void quitWebdriver(Scenario scenario) {
-    if (scenario.isFailed()) {
+//    if (scenario.isFailed()) {
+//
+//      try{
+//        final byte[] data = ((TakesScreenshot) WebdriverInstance.webdriver).getScreenshotAs(OutputType.BYTES);
+//        scenario.attach(data, "image/png", "Failed Screenshot");
+//      } catch (WebDriverException e) {
+//        e.printStackTrace();
+//      }
+//
+//    }
 
-      try{
-        final byte[] data = ((TakesScreenshot) WebdriverInstance.webdriver).getScreenshotAs(OutputType.BYTES);
-        scenario.attach(data, "image/png", "Failed Screenshot");
-      } catch (WebDriverException e) {
-        e.printStackTrace();
-      }
-
-    }
     WebdriverInstance.quit();
   }
 }

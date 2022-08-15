@@ -18,8 +18,8 @@ public class WebdriverInstance {
         options.setCapability(CapabilityType.BROWSER_NAME, BrowserType.CHROME);
         webdriver = new ChromeDriver(options);
         webdriver.manage().window().maximize();
-        webdriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        webdriver.get("https://www.saucedemo.com/");
+//        webdriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        webdriver.get("https://les-goo.vercel.app/");
         webdriver.manage().deleteAllCookies();
     }
 
