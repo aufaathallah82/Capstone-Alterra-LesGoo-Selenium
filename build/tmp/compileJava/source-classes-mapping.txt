@@ -1,6 +1,10 @@
-demo/pages/BasePageObject.java
- demo.pages.BasePageObject
 demo/webdriver/WebdriverInstance.java
  demo.webdriver.WebdriverInstance
 demo/pages/pageobject/HomepagePages.java
  demo.pages.pageobject.HomepagePages
+demo/pages/BasePageObject.java
+ demo.pages.BasePageObject
+demo/pages/pageobject/RegisterPages.java
+ demo.pages.pageobject.RegisterPages
+demo/pages/pageobject/LoginPages.java
+ demo.pages.pageobject.LoginPages

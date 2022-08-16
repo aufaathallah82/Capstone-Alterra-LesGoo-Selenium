@@ -19,7 +19,7 @@ public class WebdriverInstance {
         webdriver = new ChromeDriver(options);
         webdriver.manage().window().maximize();
 //        webdriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        webdriver.get("https://les-goo.vercel.app/");
+        webdriver.get("https://les-goo.vercel.app/login");
         webdriver.manage().deleteAllCookies();
     }
 

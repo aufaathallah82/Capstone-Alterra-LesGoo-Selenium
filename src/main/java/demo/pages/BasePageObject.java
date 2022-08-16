@@ -20,4 +20,8 @@ public class BasePageObject {
     public boolean isPresent(By element) {
         return getDriver().findElement(element).isDisplayed();
     }
+
+    public boolean isNotPresent(By element) {
+        return getDriver().findElement(element).isDisplayed();
+    }
 }

@@ -2,5 +2,7 @@ demo/stepdef/HomepageStepDef.java
  demo.stepdef.HomepageStepDef
 demo/CucumberRunner.java
  demo.CucumberRunner
+demo/stepdef/LoginStepDef.java
+ demo.stepdef.LoginStepDef
 demo/hooks/WebdriverHooks.java
  demo.hooks.WebdriverHooks
