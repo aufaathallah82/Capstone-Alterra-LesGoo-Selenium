@@ -1,5 +1,12 @@
 @web
-Feature: Homepage
+Feature: random test
 
-  Scenario: Homepage is displayed
-    Then My Groups is displayed
+  Background: Already at home page
+    Given user at login page
+    When user input username "dhandyjoehan"
+    When user input password "qweqwe"
+    When user click button login
+    Then user successfully login
+
+  Scenario: home button functionality
+
