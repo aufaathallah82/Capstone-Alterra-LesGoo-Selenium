@@ -4,10 +4,10 @@ demo/pages/BasePageObject.java
  demo.pages.BasePageObject
 demo/pages/pageobject/GroupChatPages.java
  demo.pages.pageobject.GroupChatPages
-demo/webdriver/WebdriverInstance.java
- demo.webdriver.WebdriverInstance
 demo/pages/pageobject/JoinGroupPages.java
  demo.pages.pageobject.JoinGroupPages
+demo/webdriver/WebdriverInstance.java
+ demo.webdriver.WebdriverInstance
 demo/pages/pageobject/ProfilePages.java
  demo.pages.pageobject.ProfilePages
 demo/pages/pageobject/LoginPages.java

@@ -1,5 +1,3 @@
-demo/CucumberRunner.java
- demo.CucumberRunner
 demo/stepdef/RegisterStepDef.java
  demo.stepdef.RegisterStepDef
 demo/stepdef/LoginStepDef.java
@@ -8,5 +6,9 @@ demo/hooks/WebdriverHooks.java
  demo.hooks.WebdriverHooks
 demo/stepdef/GroupchatStepDef.java
  demo.stepdef.GroupchatStepDef
+demo/CucumberRunner.java
+ demo.CucumberRunner
 demo/stepdef/HomepageStepDef.java
  demo.stepdef.HomepageStepDef
+demo/stepdef/ProfilStepDef.java
+ demo.stepdef.ProfilStepDef

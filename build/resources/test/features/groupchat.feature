@@ -22,8 +22,8 @@ Feature: random test
 
   Scenario: Logout Button Functionality
     When Click group burger icon
-    When Click leave group icon
-    Then directed to sign in page
+    When Click logout group icon
+    Then directed to login page
 
   Scenario: SOS Button Functionality
     When Click SOS icon
@@ -31,12 +31,12 @@ Feature: random test
 
   Scenario: Chat Field Functionality
     When Click chat field
-    When Input "a1!"
+    When input "a1!"
     Then Show "a1!" in chat field
 
   Scenario: Chat Send Button Functionality
     When Click chat field
-    When Input "a1!"
+    When input "a1!"
     When Click send button
     Then Show "a1!" in group chat
 
