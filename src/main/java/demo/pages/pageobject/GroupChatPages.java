@@ -39,5 +39,5 @@ public class GroupChatPages extends BasePageObject {
     public void clickBtnSend() {clickOn(btnSend);}
 
 
-
+    public void clickGroupName() {clickOn(groupName);}
 }
