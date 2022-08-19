@@ -10,6 +10,11 @@ public class GroupDetailPages extends BasePageObject {
     By ReturnArrow = By.id("back-to-home");
     By GroupId = By.id("group-id");
     By PaticipantCount = By.id("group-participant");
+    By ProfileBtn = By.id("");
+    By LeaveGroupBtn = By.id("");
+    By DeleteGroupBtn = By.id("");
+    By LogoutBtn = By.id("");
+
 
 
     public void groupDetailPageIsDisplayed(){
@@ -18,6 +23,13 @@ public class GroupDetailPages extends BasePageObject {
         isPresent(ReturnArrow);
         isPresent(GroupId);
         isPresent(PaticipantCount);
+    }
+
+    public void groupOptionBtnIsDisplayed(){
+        isPresent(ProfileBtn);
+        isPresent(LeaveGroupBtn);
+        isPresent(DeleteGroupBtn);
+        isPresent(LogoutBtn);
     }
 
     public void clickReturnBtn(){clickOn(ReturnArrow);}
