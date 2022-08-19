@@ -16,7 +16,6 @@ public class NewGroupPages extends BasePageObject {
     By SaveBtn = By.xpath("//*[@id=\"btn-newgroup\"]/path");
 
     public void newGroupIsDisplayed() {
-
         isPresent(txtNewGroup);
         isPresent(profilpic);
         isPresent(inputGroupName);
@@ -27,11 +26,24 @@ public class NewGroupPages extends BasePageObject {
         isPresent(MapEnd);
         isPresent(SaveBtn);
     }
-    public void inputGroupName(String Name){ typeOn(inputGroupName,Name);}
-    public void inputGroupDesc(String Desc){ typeOn(InputGroupDesc,Desc);}
-    public void inputStartDate(String Start){ typeOn(StarDate,Start);}
-    public void inputEndDate(String End){ typeOn(EndDate,End);}
-     // public void MapStart(){}
-    // public void MapEnd(){}
-    public void clickSaveBtn(){clickOn(SaveBtn);}
+
+    public void inputGroupName(String Name){
+        typeOn(inputGroupName,Name);
+    }
+
+    public void inputGroupDesc(String Desc){
+        typeOn(InputGroupDesc,Desc);
+    }
+
+    public void inputStartDate(String Start){
+        typeOn(StarDate,Start);
+    }
+
+    public void inputEndDate(String End){
+        typeOn(EndDate,End);
+    }
+
+    public void clickSaveBtn(){
+        clickOn(SaveBtn);
+    }
 }

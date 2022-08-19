@@ -1,48 +1,65 @@
-Feature: Profil feature
+Feature: Profil page
+
   Background: Login
     Given Input username "testingqa" and password "qwerty"
     When Click button sign in
     Then Login successfully and direct to homepage
+    When Click burger icon
+    And Show dropdown menu
+    Then Click profile
 
-    Scenario: Can Click Profile
-      When click Burger Icon
-      And click Profil Icon
-      Then user direct to Profil page
 
-    Scenario: Success Edit Profile
-      When click Button Edit Profile
-      And move to Edit Profil Page
-      And input username "NyobaTesting", email "testing@gmail.com", phone "08654830"
-      And click button save
-        # Then Popup appear
+    ## Profile page
+  Scenario: Show profile page
+    Then Profile page field is displayed
 
-    Scenario : Edit Profil with username Null
-      When click Button Edit Profile
-      And move to Edit Profil Page
-      And Delete username field
-      And click button save
+  Scenario: Check back button on header
+    When Click back button on header profile
+    Then Move to homepage
 
-      Scenario : Edit Profil with username Null
-      When click Button Edit Profile
-      And move to Edit Profil Page
-      And Delete email field
-      And click button save
-
-      Scenario : Edit Profil with username Null
-      When click Button Edit Profile
-      And move to Edit Profil Page
-      And Delete phone field
-      And click button save
-
-      Scenario : Edit Profil with username Null
-      When click Button Edit Profile
-      And move to Edit Profil Page
-      And Delete username, email and phone field
-      And click button save
-
-    Scenario: Delete Account
-      When Clik Delete Button
+  Scenario: Validate profile is correct
+    Then Text username should be "testingqa"
+    And Text email should be "testingqa@gmail.com"
+    And Text phone should be "666"
 
 
 
 
+    ## Edit Profile page
+  Scenario: Can direct to edit profile
+    When Click button Edit Profile
+    Then Move to edit profile page
+
+  Scenario: Success Edit Profile
+    When Click button Edit Profile
+    And move to Edit Profil Page
+    And input username "nyobaTesting", email "testing@gmail.com", phone "08654830"
+    And click button save
+      # Then Popup appear
+
+  Scenario : Edit Profil with username Null
+    When Click button Edit Profile
+    And move to Edit Profil Page
+    And clear username field
+    And click button save
+
+  Scenario : Edit Profil with username Null
+    When Click button Edit Profile
+    And move to Edit Profil Page
+    And clear email field
+    And click button save
+
+  Scenario : Edit Profil with username Null
+    When Click button Edit Profile
+    And move to Edit Profil Page
+    And clear phone field
+    And click button save
+
+  Scenario : Edit Profil with username Null
+    When Click button Edit Profile
+    And move to Edit Profil Page
+    And clear username, email and phone field
+    And click button save
+
+  Scenario: Delete Account
+    When Click delete account button

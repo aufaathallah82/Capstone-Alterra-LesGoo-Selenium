@@ -4,12 +4,8 @@ import demo.pages.pageobject.HomepagePages;
 import demo.pages.pageobject.NewGroupPages;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import demo.pages.pageobject.LoginPages;
-import demo.pages.pageobject.RegisterPages;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 
-public class AddGroupStepDef {
+public class NewGroupStepDef {
     HomepagePages homepagePages = new HomepagePages();
     NewGroupPages newGroupPages = new NewGroupPages();
     @Given("click button Add Group")

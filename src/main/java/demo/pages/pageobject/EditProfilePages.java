@@ -1,34 +1,58 @@
 package demo.pages.pageobject;
 import demo.pages.BasePageObject;
 import org.openqa.selenium.By;
+
 public class EditProfilePages extends BasePageObject {
-    By EditButton = By.xpath("//*[@id=\"btn-editprofile\"]");
-    By EditPofileTxt = By.xpath("//*[@id=\"__next\"]/div[2]/div[1]/div/div[2]");
-    By EditPic = By.xpath("//*[@id=\"edit-image\"]/path[1]");
-    By UsernameField = By.id("edit-username");
-    By EmailField = By.id("edit-email");
-    By PhoneField = By.id("edit-phone");
-    By BtnSave = By.id("btn-savehanges");
-    By BtnDelete = By.id("btn-delacc");
 
-    public void EditProfilisDisplayed(){
-        isPresent(EditPofileTxt);
-        isPresent(EditPic);
-        isPresent(UsernameField);
-        isPresent(EmailField);
-        isPresent(PhoneField);
-        isPresent(BtnDelete);
-        isPresent(BtnSave);
+    By txtEditProfile = By.xpath("//*[@id=\"__next\"]/div[2]/div[1]/div/div[2]");
+    By btnBackEditProfile = By.id("back-to-home");
+    By imgUserEdit = By.id("edit-image");
+    By usernameField = By.id("edit-username");
+    By emailField = By.id("edit-email");
+    By phoneField = By.id("edit-phone");
+    By btnSave = By.id("btn-savehanges");
+    By btnDelete = By.id("btn-delacc");
+
+    public void editProfileIsDisplayed() {
+        isPresent(txtEditProfile);
+        isPresent(btnBackEditProfile);
+        isPresent(imgUserEdit);
+        isPresent(usernameField);
+        isPresent(emailField);
+        isPresent(phoneField);
+        isPresent(btnSave);
+        isPresent(btnDelete);
     }
-    public void clickEditBtn() { clickOn(EditButton);}
-    public void inputUsernameField(String username){ typeOn(UsernameField,username);}
-    public void inputEmailField(String Email){ typeOn(EmailField,Email);}
-    public void inputPhoneField(String Phone){ typeOn(PhoneField,Phone);}
-    public void SaveChangesBtn(){clickOn(BtnSave);}
-    public void DeleteBtn(){clickOn(BtnDelete);}
 
-    public void DeleteUsernameField(){ClearField(UsernameField);}
-    public void DeleteEmailField(){ClearField(EmailField);}
-    public void DeletepHONEfIELD(){ClearField(PhoneField);}
+    public void inputUsernameField(String username) {
+        typeOn(usernameField, username);
+    }
 
+    public void inputEmailField(String email) {
+        typeOn(emailField, email);
+    }
+
+    public void inputPhoneField(String phone){
+        typeOn(phoneField, phone);
+    }
+
+    public void SaveChangesBtn(){
+        clickOn(btnSave);
+    }
+
+    public void DeleteBtn(){
+        clickOn(btnDelete);
+    }
+
+    public void clearUsernameField(){
+        clearField(usernameField);
+    }
+
+    public void clearEmailField(){
+        clearField(emailField);
+    }
+
+    public void clearPhoneField(){
+        clearField(phoneField);
+    }
 }

@@ -1,6 +1,9 @@
 @web
 Feature: Register page
 
+  Background:
+    When Click Create an Account
+
   Scenario: Show register page
     Then Register page field is displayed
 

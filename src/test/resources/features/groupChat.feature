@@ -1,8 +1,8 @@
 @web
-Feature: random test
+Feature: Group Chat page
 
   Background: Show Group Pace
-    Given Input username "testingqa" and password "qwerty"
+    Given Input username "qalesgoo" and password "qwerty"
     When Click button sign in
     Then Login successfully and direct to group chat
 

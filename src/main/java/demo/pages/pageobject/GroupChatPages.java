@@ -25,19 +25,44 @@ public class GroupChatPages extends BasePageObject {
         isPresent(logOutBtn);
     }
 
-    public void sOSPageIsDisplayed() {isPresent(sOSPage);}
-    public void clickBtnHamburger() {clickOn(btnHamburger);}
-    public void clickBtnProfile() {clickOn(profileBtn);}
-    public void clickBtnLeave() {clickOn(leaveGroupBtn);}
-    public void clickBtnLogout() {clickOn(logOutBtn);}
-    public void clickBtnSOS() {clickOn(sOSBtn);}
-    public void clickFieldChat() {clickOn(chatField);}
+    public void sOSPageIsDisplayed() {
+        isPresent(sOSPage);
+    }
+
+    public void clickBtnHamburger() {
+        clickOn(btnHamburger);
+    }
+
+    public void clickBtnProfile() {
+        clickOn(profileBtn);
+    }
+
+    public void clickBtnLeave() {
+        clickOn(leaveGroupBtn);
+    }
+
+    public void clickBtnLogout() {
+        clickOn(logOutBtn);
+    }
+
+    public void clickBtnSOS() {
+        clickOn(sOSBtn);
+    }
+
+    public void clickFieldChat() {
+        clickOn(chatField);
+    }
+
     public void inputString(String chat) {
         By element = By.id("input-chat");
         typeOn(element, chat);
     }
-    public void clickBtnSend() {clickOn(btnSend);}
 
+    public void clickBtnSend() {
+        clickOn(btnSend);
+    }
 
-    public void clickGroupName() {clickOn(groupName);}
+    public void clickGroupName() {
+        clickOn(groupName);
+    }
 }

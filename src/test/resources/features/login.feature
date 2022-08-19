@@ -4,7 +4,7 @@ Feature: Login page
   Scenario: Show login page
     Then Login page field is displayed
 
-  Scenario: Show login page
+  Scenario: Check text link Create an Account
     When Click Create an Account
     Then Move to register page
 
@@ -18,7 +18,7 @@ Feature: Login page
     When Click button sign in
     Then Login successfully and direct to group chat
 
-  Scenario: Can Login using unregistered accoung
+  Scenario: Can Login using unregistered account
     Given Input username "abcde" and password "abcde"
     When Click button sign in
 #    Then Show error state

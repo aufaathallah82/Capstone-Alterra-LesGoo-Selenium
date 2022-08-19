@@ -28,17 +28,17 @@ Feature: Profil feature
       And Delete email field
       And click button save
 
-  #    Scenario : Edit Profil with username Null
-#      When click Button Edit Profile
-#      And move to Edit Profil Page
-#      And Delete phone field (masi blm tau )
-#      And click button save
+      Scenario : Edit Profil with username Null
+      When click Button Edit Profile
+      And move to Edit Profil Page
+      And Delete phone field
+      And click button save
 
-  #    Scenario : Edit Profil with username Null
-#      When click Button Edit Profile
-#      And move to Edit Profil Page
-#      And Delete username, email and phone field ( masi belum tau )
-#      And click button save
+      Scenario : Edit Profil with username Null
+      When click Button Edit Profile
+      And move to Edit Profil Page
+      And Delete username, email and phone field
+      And click button save
 
     Scenario: Delete Account
       When Clik Delete Button
