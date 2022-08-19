@@ -24,7 +24,12 @@ public class BasePageObject {
     public boolean isNotPresent(By element) {
         return getDriver().findElement(element).isDisplayed();
     }
-    public void ClearField(By element) {
+
+    public String getText(By element) {
+        return getDriver().findElement(element).getText();
+    }
+
+    public void clearField(By element) {
         getDriver().findElement(element).clear();
     }
 }

@@ -1,5 +1,5 @@
 @web
-Feature: Homepage
+Feature: Homepage page
 
   Scenario: Homepage is displayed
     Then Homepage is displayed

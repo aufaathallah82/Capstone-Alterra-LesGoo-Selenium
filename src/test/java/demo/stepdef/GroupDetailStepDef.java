@@ -10,21 +10,48 @@ public class GroupDetailStepDef {
     GroupChatPages groupChatPages = new GroupChatPages();
     GroupDetailPages groupDetailPages = new GroupDetailPages();
 
-   @When("Click group name")
-    public void clickGroupName(){groupChatPages.clickGroupName();}
+    @Then("directed to group detail page")
+    public void directedToGroupDetailPages(){
+        groupDetailPages.groupDetailPageIsDisplayed();
+    }
 
-   @Then("directed to group detail page")
-    public void directedToGroupDetailPages(){groupDetailPages.groupDetailPageIsDisplayed();}
-
-    @When("Click return button")
-    public void clickReturnButton(){groupDetailPages.clickReturnBtn();}
+    @When("Click back button")
+    public void clickReturnButton(){
+        groupDetailPages.clickBtnBackGroupDetail();
+    }
 
     @Then("directed to group chat page")
-    public void directedToGroupChatPage(){groupChatPages.profileBtnLeaveGroupBtnLogoutBtn();}
+    public void directedToGroupChatPage(){
+        groupChatPages.groupNameIsDisplayed();
+    }
 
-    @When("Click option button")
-    public void clickOptionButton(){groupDetailPages.clickOptionBtn();}
+    @When("Click humbergur icon")
+    public void clickOptionButton(){
+        groupDetailPages.clickHumbergerIcon();
+    }
 
     @Then("Show profile, leave group, delete group, and logout button")
-    public void showProfileLeaveGroupDeleteGroupAndLogoutBtn(){groupDetailPages.groupOptionBtnIsDisplayed();}
+    public void showProfileLeaveGroupDeleteGroupAndLogoutBtn(){
+        groupDetailPages.dropdownListHumbergurIconIsDisplayed();
+    }
+
+    @When("Click profile icon on dropdown list group detail")
+    public void clickProfileIconOnDropdownListGroupDetail() {
+        groupDetailPages.clickProfileGroupDetail();
+    }
+
+    @When("Click leave group icon on dropdown list group detail")
+    public void clickLeaveGroupIconOnDropdownListGroupDetail() {
+        groupDetailPages.clickLeaveGroupDetail();
+    }
+
+    @When("Click delete group on dropdown list group detail")
+    public void clickDeleteGroupOnDropdownListGroupDetail() {
+        groupDetailPages.clickDeleteGroupDetail();
+    }
+
+    @When("Click logout on dropdown list group detail")
+    public void clickLogoutOnDropdownListGroupDetail() {
+        groupDetailPages.clickLogoutGroupDetail();
+    }
 }

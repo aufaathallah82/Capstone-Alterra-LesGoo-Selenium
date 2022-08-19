@@ -5,18 +5,50 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class ProfilStepDef {
+
     ProfilePages profilePages = new ProfilePages();
-    @When("click Burger Icon")
-    public void clickBurgerIcon() { profilePages.clickButtonBurger();
+    EditProfilePages editProfilePages = new EditProfilePages();
+
+    @Then("Profile page field is displayed")
+    public void profilePageFieldIsDisplayed() {
+        profilePages.profileIsDisplayed();
     }
 
-    @And("click Profil Icon")
-    public void clickProfilIcon() { profilePages.clickButtonProfil();
+    @When("Click back button on header profile")
+    public void clickBackButtonOnHeaderProfile() {
+        profilePages.clickBtnBackProfile();
     }
 
-    @Then("user direct to Profil page")
-    public void userDirectToProfilPage() { profilePages.profileIsDisplayed();
+    @Then("Text username should be {string}")
+    public void textUsernameShouldBe(String username) {
+        Assert.assertEquals(profilePages.getTextUsername(), username);
+    }
+
+    @And("Text email should be {string}")
+    public void textEmailShouldBe(String email) {
+        Assert.assertEquals(profilePages.getTextEmail(), email);
+    }
+
+    @And("Text phone should be {string}")
+    public void textPhoneShouldBe(String phone) {
+        Assert.assertEquals(profilePages.getTextPhone(), phone);
+    }
+
+    @When("Click button Edit Profile")
+    public void clickButtonEditProfile() {
+        profilePages.clickBtnEditProfile();
+    }
+
+    @Then("Move to edit profile page")
+    public void moveToEditProfilePage() {
+        editProfilePages.editProfileIsDisplayed();
+    }
+
+    @When("Click delete account button")
+    public void clickDeleteAccountButton() {
+        editProfilePages.DeleteBtn();
     }
 }

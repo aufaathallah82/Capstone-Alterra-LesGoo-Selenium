@@ -14,46 +14,51 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class EditProfilStepDef {
+
     EditProfilePages editProfilePages = new EditProfilePages();
     ProfilePages profilePages = new ProfilePages();
 
-    @When("click Button Edit Profile")
-    public void clickButtonEditProfile() {editProfilePages.clickEditBtn();
-    }
     @And("move to Edit Profil Page")
-    public void moveToEditProfilPage() { editProfilePages.EditProfilisDisplayed();
+    public void moveToEditProfilPage() {
+        editProfilePages.editProfileIsDisplayed();
     }
+
     @And("input username {string}, email {string}, phone {string}")
-    public void inputUsernameEmailPhone(String username, String email, String phonenumber) {
-    editProfilePages.inputUsernameField(username);
-    editProfilePages.inputEmailField(email);
-    editProfilePages.inputPhoneField(phonenumber);}
+    public void inputUsernameEmailPhone(String username, String email, String phoneNumber) {
+        editProfilePages.inputUsernameField(username);
+        editProfilePages.inputEmailField(email);
+        editProfilePages.inputPhoneField(phoneNumber);
+    }
 
     @And("click button save")
-    public void clickButtonSave() { editProfilePages.SaveChangesBtn();
+    public void clickButtonSave() {
+        editProfilePages.SaveChangesBtn();
     }
-
 
     @When("Clik Delete Button")
-    public void clikDeleteButton() { editProfilePages.DeleteBtn();
+    public void clikDeleteButton() {
+        editProfilePages.DeleteBtn();
     }
 
-    @And("Delete username field")
-    public void deleteUsernameField() { editProfilePages.DeleteUsernameField();
+    @And("clear username field")
+    public void deleteUsernameField() {
+        editProfilePages.clearUsernameField();
     }
 
-    @And("Delete email field")
-    public void deleteEmailField() { editProfilePages.DeleteEmailField();
+    @And("clear email field")
+    public void deleteEmailField() {
+        editProfilePages.clearEmailField();
     }
 
-    @And("Delete phone field")
-    public void deletePhoneField() { editProfilePages.DeletepHONEfIELD();
+    @And("clear phone field")
+    public void deletePhoneField() {
+        editProfilePages.clearPhoneField();
     }
 
-    @And("Delete username, email and phone field")
+    @And("clear username, email and phone field")
     public void deleteUsernameEmailAndPhoneField() {
-        editProfilePages.DeleteUsernameField();
-        editProfilePages.DeleteEmailField();
-        editProfilePages.DeletepHONEfIELD();
+        editProfilePages.clearUsernameField();
+        editProfilePages.clearEmailField();
+        editProfilePages.clearPhoneField();
     }
 }

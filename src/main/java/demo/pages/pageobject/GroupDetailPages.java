@@ -5,34 +5,53 @@ import org.openqa.selenium.By;
 
 public class GroupDetailPages extends BasePageObject {
 
-    By TitleGroup = By.id("group-name");
-    By OptionIcon = By.id("des-option");
-    By ReturnArrow = By.id("back-to-home");
-    By GroupId = By.id("group-id");
-    By PaticipantCount = By.id("group-participant");
-    By ProfileBtn = By.id("");
-    By LeaveGroupBtn = By.id("");
-    By DeleteGroupBtn = By.id("");
-    By LogoutBtn = By.id("");
+    By btnBackGroupDetail = By.id("back-to-home");
+    By humburgerIcon = By.id("des-option");
+    By txtGroupName = By.xpath("//*[@id=\"__next\"]/div[2]/div[1]/div[2]/h1");
+    By txtGroupId = By.xpath("//*[@id=\"__next\"]/div[2]/div[1]/div[2]/h2");
+    By txtDescGroup = By.xpath("//*[@id=\"__next\"]/div[2]/div[2]/p");
+    By txtParticipants = By.xpath("//*[@id=\"__next\"]/div[2]/div[3]/h2");
 
-
+    By dropdownListHumberIcon = By.xpath("//*[@id=\"headlessui-menu-items-:Rkl6:\"]");
+    By profileGroupDetail = By.xpath("//*[@id=\"headlessui-menu-item-:r0:\"]/div[1]");
+    By leaveGroupDetail = By.id("btn-leavegroup");
+    By deleteGroupDetail = By.id("btn-deletegroup");
+    By logoutGroupDetail = By.id("btn-logout");
 
     public void groupDetailPageIsDisplayed(){
-        isPresent(TitleGroup);
-        isPresent(OptionIcon);
-        isPresent(ReturnArrow);
-        isPresent(GroupId);
-        isPresent(PaticipantCount);
+        isPresent(btnBackGroupDetail);
+        isPresent(humburgerIcon);
+        isPresent(txtGroupName);
+        isPresent(txtGroupId);
+        isPresent(txtDescGroup);
+        isPresent(txtParticipants);
     }
 
-    public void groupOptionBtnIsDisplayed(){
-        isPresent(ProfileBtn);
-        isPresent(LeaveGroupBtn);
-        isPresent(DeleteGroupBtn);
-        isPresent(LogoutBtn);
+    public void dropdownListHumbergurIconIsDisplayed() {
+        isPresent(dropdownListHumberIcon);
     }
 
-    public void clickReturnBtn(){clickOn(ReturnArrow);}
-    public void clickOptionBtn(){clickOn(OptionIcon);}
+    public void clickBtnBackGroupDetail(){
+        clickOn(btnBackGroupDetail);
+    }
 
+    public void clickHumbergerIcon(){
+        clickOn(humburgerIcon);
+    }
+
+    public void clickProfileGroupDetail(){
+        clickOn(profileGroupDetail);
+    }
+
+    public void clickLeaveGroupDetail(){
+        clickOn(leaveGroupDetail);
+    }
+
+    public void clickDeleteGroupDetail(){
+        clickOn(deleteGroupDetail);
+    }
+
+    public void clickLogoutGroupDetail(){
+        clickOn(logoutGroupDetail);
+    }
 }
