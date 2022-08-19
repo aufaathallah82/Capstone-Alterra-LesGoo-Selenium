@@ -8,7 +8,10 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class EditProfilStepDef {
     EditProfilePages editProfilePages = new EditProfilePages();
@@ -35,7 +38,22 @@ public class EditProfilStepDef {
     public void clikDeleteButton() { editProfilePages.DeleteBtn();
     }
 
-//    @And("Delete username field")
-//    public void deleteUsernameField() {
-//    }
+    @And("Delete username field")
+    public void deleteUsernameField() { editProfilePages.DeleteUsernameField();
+    }
+
+    @And("Delete email field")
+    public void deleteEmailField() { editProfilePages.DeleteEmailField();
+    }
+
+    @And("Delete phone field")
+    public void deletePhoneField() { editProfilePages.DeletepHONEfIELD();
+    }
+
+    @And("Delete username, email and phone field")
+    public void deleteUsernameEmailAndPhoneField() {
+        editProfilePages.DeleteUsernameField();
+        editProfilePages.DeleteEmailField();
+        editProfilePages.DeletepHONEfIELD();
+    }
 }
