@@ -23,8 +23,12 @@ public class EditProfilePages extends BasePageObject {
     public void clickEditBtn() { clickOn(EditButton);}
     public void inputUsernameField(String username){ typeOn(UsernameField,username);}
     public void inputEmailField(String Email){ typeOn(EmailField,Email);}
-    public void inputPhoneField(String Phone){ typeOn(PhoneField);}
+    public void inputPhoneField(String Phone){ typeOn(PhoneField,Phone);}
     public void SaveChangesBtn(){clickOn(BtnSave);}
     public void DeleteBtn(){clickOn(BtnDelete);}
+
+    public void DeleteUsernameField(){ClearField(UsernameField);}
+    public void DeleteEmailField(){ClearField(EmailField);}
+    public void DeletepHONEfIELD(){ClearField(PhoneField);}
 
 }
