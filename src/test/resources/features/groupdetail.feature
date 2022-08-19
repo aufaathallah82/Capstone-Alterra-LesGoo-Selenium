@@ -14,7 +14,22 @@ Feature: random test
 
   Scenario: Option Button Functionality
     When Click option button
-#    Then ???
+    Then Show profile, leave group, delete group, and logout button
+
+  Scenario: Profile Button Functionality
+    When Click option button
+    When Click profile icon
+    Then directed to profile
+
+  Scenario: Leave group Button Functionality
+    When Click option button
+    When Click leave group icon
+    Then directed to home page
+
+  Scenario: Can click logout at dropdown menu
+    When Click option button
+    When Click logout
+    Then Success direct to Sign in page
 
 
 

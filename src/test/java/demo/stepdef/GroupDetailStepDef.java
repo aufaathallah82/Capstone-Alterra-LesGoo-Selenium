@@ -24,4 +24,7 @@ public class GroupDetailStepDef {
 
     @When("Click option button")
     public void clickOptionButton(){groupDetailPages.clickOptionBtn();}
+
+    @Then("Show profile, leave group, delete group, and logout button")
+    public void showProfileLeaveGroupDeleteGroupAndLogoutBtn(){groupDetailPages.groupOptionBtnIsDisplayed();}
 }
