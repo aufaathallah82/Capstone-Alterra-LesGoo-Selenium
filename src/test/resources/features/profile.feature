@@ -16,6 +16,30 @@ Feature: Profil feature
       And click button save
         # Then Popup appear
 
+#    Scenario : Edit Profil with username Null
+#      When click Button Edit Profile
+#      And move to Edit Profil Page
+#      And Delete username field ( masi belum tau )
+#      And click button save
+
+  #    Scenario : Edit Profil with username Null
+#      When click Button Edit Profile
+#      And move to Edit Profil Page
+#      And Delete email field ( masi belum tau )
+#      And click button save
+
+  #    Scenario : Edit Profil with username Null
+#      When click Button Edit Profile
+#      And move to Edit Profil Page
+#      And Delete phone field (masi blm tau )
+#      And click button save
+
+  #    Scenario : Edit Profil with username Null
+#      When click Button Edit Profile
+#      And move to Edit Profil Page
+#      And Delete username, email and phone field ( masi belum tau )
+#      And click button save
+
     Scenario: Delete Account
       When Clik Delete Button
 

@@ -9,6 +9,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+
 public class EditProfilStepDef {
     EditProfilePages editProfilePages = new EditProfilePages();
     ProfilePages profilePages = new ProfilePages();
@@ -33,4 +34,8 @@ public class EditProfilStepDef {
     @When("Clik Delete Button")
     public void clikDeleteButton() { editProfilePages.DeleteBtn();
     }
+
+//    @And("Delete username field")
+//    public void deleteUsernameField() {
+//    }
 }
