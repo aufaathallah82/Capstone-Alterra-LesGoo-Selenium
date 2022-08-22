@@ -8,7 +8,7 @@ public class RegisterPages extends BasePageObject {
     By registerText = By.xpath("/html/body/div/div[2]/h1");
     By usernameField = By.id("inputReg-username");
     By emailField = By.id("inputReg-email");
-    By phoneField = By.id("inputReg-email");
+    By phoneField = By.id("inputReg-phone");
     By passwordField = By.id("inputReg-password");
     By btnSignUp = By.id("btn-register");
     By txtLoginNow = By.xpath("//*[@id=\"__next\"]/div[2]/form/div[5]/span[2]");

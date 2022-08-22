@@ -1,20 +1,22 @@
-demo/stepdef/LoginStepDef.java
- demo.stepdef.LoginStepDef
-demo/stepdef/RegisterStepDef.java
- demo.stepdef.RegisterStepDef
+demo/CucumberRunner.java
+ demo.CucumberRunner
+demo/stepdef/NewGroupStepDef.java
+ demo.stepdef.NewGroupStepDef
+demo/stepdef/JoinGroupStepDef.java
+ demo.stepdef.JoinGroupStepDef
 demo/stepdef/EditProfilStepDef.java
  demo.stepdef.EditProfilStepDef
 demo/hooks/WebdriverHooks.java
  demo.hooks.WebdriverHooks
-demo/stepdef/GroupchatStepDef.java
- demo.stepdef.GroupchatStepDef
-demo/CucumberRunner.java
- demo.CucumberRunner
-demo/stepdef/GroupDetailStepDef.java
- demo.stepdef.GroupDetailStepDef
+demo/stepdef/RegisterStepDef.java
+ demo.stepdef.RegisterStepDef
 demo/stepdef/HomepageStepDef.java
  demo.stepdef.HomepageStepDef
-demo/stepdef/AddGroupStepDef.java
- demo.stepdef.AddGroupStepDef
 demo/stepdef/ProfilStepDef.java
  demo.stepdef.ProfilStepDef
+demo/stepdef/LoginStepDef.java
+ demo.stepdef.LoginStepDef
+demo/stepdef/GroupChatStepDef.java
+ demo.stepdef.GroupChatStepDef
+demo/stepdef/GroupDetailStepDef.java
+ demo.stepdef.GroupDetailStepDef

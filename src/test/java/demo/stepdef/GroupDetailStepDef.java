@@ -4,6 +4,7 @@ import demo.pages.pageobject.GroupChatPages;
 import demo.pages.pageobject.GroupDetailPages;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class GroupDetailStepDef {
 
@@ -12,17 +13,18 @@ public class GroupDetailStepDef {
 
     @Then("directed to group detail page")
     public void directedToGroupDetailPages(){
-        groupDetailPages.groupDetailPageIsDisplayed();
+        Assert.assertEquals(groupChatPages.getTitle(), "LesGoo | Group Detail");
+//        groupDetailPages.groupDetailPageIsDisplayed();
     }
 
-    @When("Click back button")
+    @When("Click back button group detail")
     public void clickReturnButton(){
         groupDetailPages.clickBtnBackGroupDetail();
     }
 
     @Then("directed to group chat page")
     public void directedToGroupChatPage(){
-        groupChatPages.groupNameIsDisplayed();
+        Assert.assertEquals(groupChatPages.getTitle(), "LesGoo | Group");
     }
 
     @When("Click humbergur icon")

@@ -17,7 +17,8 @@ public class HomepageStepDef {
 
     @When("Homepage is displayed")
     public void isMyGroupsIsDisplayed() {
-        homepagePages.homepageIsDisplayed();
+        Assert.assertEquals(homepagePages.getTitle(), "LesGoo | Make Your Roadtrip Easier");
+//        homepagePages.homepageIsDisplayed();
     }
 
     @When("Click burger icon")
@@ -37,7 +38,8 @@ public class HomepageStepDef {
 
     @And("Success direct to Profile page")
     public void successDirectToProfilePage() {
-        profilePages.profileIsDisplayed();
+        Assert.assertEquals(homepagePages.getTitle(), "LesGoo | Profile");
+//        profilePages.profileIsDisplayed();
     }
 
     @Then("Click logout")
@@ -47,7 +49,8 @@ public class HomepageStepDef {
 
     @And("Success direct to Sign in page")
     public void successDirectToSignInPage() {
-        loginPages.isLoginPageDisplayed();
+        Assert.assertEquals(homepagePages.getTitle(), "LesGoo | Login");
+//        loginPages.isLoginPageDisplayed();
     }
 
     @Then("Make sure dropdown menu is minimize")
@@ -62,7 +65,8 @@ public class HomepageStepDef {
 
     @Then("Success direct to New Group page")
     public void successDirectToNewGroupPage() {
-        newGroupPages.newGroupIsDisplayed();
+        Assert.assertEquals(homepagePages.getTitle(), "LesGoo | New Group");
+//        newGroupPages.newGroupIsDisplayed();
     }
 
     @Given("Click button join group")
@@ -72,6 +76,7 @@ public class HomepageStepDef {
 
     @Then("Success direct to Join Group page")
     public void successDirectToJoinGroupPage() {
-        joinGroupPages.joinGroupIsDisplayed();
+        Assert.assertEquals(homepagePages.getTitle(), "LesGoo | Join Group");
+//        joinGroupPages.joinGroupIsDisplayed();
     }
 }

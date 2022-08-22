@@ -7,6 +7,7 @@ import demo.pages.pageobject.RegisterPages;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class LoginStepDef {
 
@@ -27,7 +28,7 @@ public class LoginStepDef {
 
     @Then("Move to register page")
     public void moveToRegisterPage() {
-        registerPages.registerPageIsDisplayed();
+        Assert.assertEquals(registerPages.getTitle(), "LesGoo | Register");
     }
 
     @Given("Input username {string} and password {string}")
@@ -43,11 +44,12 @@ public class LoginStepDef {
 
     @Then("Login successfully and direct to homepage")
     public void loginSuccessfullyAndDirectToHomepage() {
-        homepagePages.homepageIsDisplayed();
+        Assert.assertEquals(homepagePages.getTitle(), "LesGoo | Make Your Roadtrip Easier");
     }
 
     @Then("Login successfully and direct to group chat")
     public void loginSuccessfullyAndDirectToGroupChat() {
-        groupChatPages.groupNameIsDisplayed();
+        Assert.assertEquals(homepagePages.getTitle(), "LesGoo | Group");
+//        groupChatPages.groupNameIsDisplayed();
     }
 }

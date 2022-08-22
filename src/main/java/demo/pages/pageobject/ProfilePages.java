@@ -10,8 +10,8 @@ public class ProfilePages extends BasePageObject {
     By btnBackProfile = By.id("back-to-home");
     By imgIcon = By.xpath("//*[@id=\"__next\"]/div[2]/div[2]/div[1]/svg");
     By txtUsername = By.xpath("//*[@id=\"__next\"]/div[2]/div[2]/div[1]/h1");
-    By txtEmail = By.xpath("//*[@id=\"__next\"]/div[2]/div[2]/div[1]/div[1]/p");
-    By txtPhone = By.xpath("//*[@id=\"__next\"]/div[2]/div[2]/div[1]/div[2]/p");;
+    By txtEmail = By.xpath("/html/body/div/div[2]/div[2]/div[1]/div[1]/p");
+    By txtPhone = By.xpath("/html/body/div/div[2]/div[2]/div[1]/div[2]/p");;
     By btnEditProfile = By.id("btn-editprofile");
 
     // Edit Profile page

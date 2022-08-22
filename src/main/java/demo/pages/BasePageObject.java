@@ -3,6 +3,8 @@ package demo.pages;
 import demo.webdriver.WebdriverInstance;
 import org.openqa.selenium.*;
 
+import static java.lang.Thread.sleep;
+
 public class BasePageObject {
 
     public WebDriver getDriver() {
@@ -31,5 +33,26 @@ public class BasePageObject {
 
     public void clearField(By element) {
         getDriver().findElement(element).clear();
+    }
+
+    public void wait(int wait) {
+        try {
+            sleep(wait);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void refreshPage() {
+        getDriver().navigate().refresh();
+    }
+
+    public void alertLogin() {
+        getDriver().switchTo().alert().accept();
+    }
+
+    public String getTitle() {
+        wait(2000);
+        return getDriver().getTitle();
     }
 }

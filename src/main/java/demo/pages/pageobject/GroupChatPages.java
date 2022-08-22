@@ -6,8 +6,9 @@ import org.openqa.selenium.By;
 public class GroupChatPages extends BasePageObject {
 
     By groupName = By.id("group-name");
-    By btnHamburger = By.id("group-option");
+    By btnHamburger = By.xpath("/html/body/div/div[2]/div[1]/div/div/button");
     By profileBtn = By.id("btn-profile");
+    By groupDetailBtn = By.id("btn-groupdetail");
     By leaveGroupBtn = By.id("btn-leavegroup");
     By logOutBtn = By.id("btn-logout");
     By sOSBtn = By.id("btn-SOS");
@@ -35,6 +36,10 @@ public class GroupChatPages extends BasePageObject {
 
     public void clickBtnProfile() {
         clickOn(profileBtn);
+    }
+
+    public void clickBtnGroupDetail() {
+        clickOn(groupDetailBtn);
     }
 
     public void clickBtnLeave() {

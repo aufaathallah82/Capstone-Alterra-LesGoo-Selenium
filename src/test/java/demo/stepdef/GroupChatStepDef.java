@@ -6,6 +6,7 @@ import demo.pages.pageobject.LoginPages;
 import demo.pages.pageobject.ProfilePages;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 
 public class GroupChatStepDef {
@@ -37,7 +38,7 @@ public class GroupChatStepDef {
 
     @Then("directed to profile")
     public void directedToProfile(){
-        profilePages.profileIsDisplayed();
+        Assert.assertEquals(profilePages.getTitle(), "LesGoo | Profile");
     }
 
     @When("Click leave group icon")
@@ -47,7 +48,7 @@ public class GroupChatStepDef {
 
     @Then("directed to home page")
     public void directedToHomepage(){
-        homepagePages.homepageIsDisplayed();
+        Assert.assertEquals(homepagePages.getTitle(), "LesGoo | Make Your Roadtrip Easier");
     }
 
     @When("Click logout group icon")
@@ -57,7 +58,8 @@ public class GroupChatStepDef {
 
     @Then("directed to login page")
     public void directedToLoginpage(){
-        loginPages.isLoginPageDisplayed();
+        Assert.assertEquals(homepagePages.getTitle(), "LesGoo | Login");
+//        loginPages.isLoginPageDisplayed();
     }
 
     @When("Click SOS icon")
@@ -93,5 +95,15 @@ public class GroupChatStepDef {
     @Then("Show {string} in group chat")
     public void showInGroupChat(String arg0) {
         groupChatPages.inputString(arg0);
+    }
+
+    @When("Click group detail icon")
+    public void clickGroupDetailIcon() {
+        groupChatPages.clickBtnGroupDetail();
+    }
+
+    @Then("directed to group detail")
+    public void directedToGroupDetail() {
+        Assert.assertEquals(homepagePages.getTitle(), "LesGoo | Group Detail");
     }
 }
