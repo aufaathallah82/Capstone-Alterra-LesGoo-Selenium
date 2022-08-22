@@ -44,6 +44,7 @@ public class LoginStepDef {
     @Then("Login successfully and direct to homepage")
     public void loginSuccessfullyAndDirectToHomepage() {
         homepagePages.homepageIsDisplayed();
+        loginPages.alertLogin();
     }
 
     @Then("Login successfully and direct to group chat")

@@ -6,14 +6,18 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 
 public class NewGroupStepDef {
+
     HomepagePages homepagePages = new HomepagePages();
     NewGroupPages newGroupPages = new NewGroupPages();
+
     @Given("click button Add Group")
-    public void clickButtonAddGroup() { homepagePages.clickBtnNewGroup();
+    public void clickButtonAddGroup() {
+        homepagePages.clickBtnNewGroup();
     }
 
     @And("Move to Add Group Page")
-    public void moveToAddGroupPage() { newGroupPages.newGroupIsDisplayed();
+    public void moveToAddGroupPage() {
+        newGroupPages.newGroupIsDisplayed();
     }
 
     @And("input Group Name {string}, Dec {string}, Start Date {string}, end date {string}")
@@ -25,6 +29,7 @@ public class NewGroupStepDef {
     }
 
     @And("clik Button Save")
-    public void clikButtonSave() { newGroupPages.clickSaveBtn();
+    public void clikButtonSave() {
+        newGroupPages.clickSaveBtn();
     }
 }

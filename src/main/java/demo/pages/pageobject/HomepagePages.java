@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 
 public class HomepagePages extends BasePageObject {
 
-    By logo = By.xpath("//*[@id=\"__next\"]/div[2]/div[1]/div/span/img");
+    By logo = By.xpath("/html/body/div/div[2]/div[1]/div/span/img");
     By btnBurger = By.id("btn-burger");
     By btnAddGroup = By.id("btn-addgroup");
     By btnJoinGroup = By.id("btn-addgroup");
@@ -14,6 +14,7 @@ public class HomepagePages extends BasePageObject {
     By dropdownMenu = By.xpath("//*[@id=\"headlessui-menu-items-:R2r6:\"]");
 
     public void homepageIsDisplayed() {
+        wait(10000);
         isPresent(logo);
         isPresent(btnBurger);
         isPresent(btnAddGroup);

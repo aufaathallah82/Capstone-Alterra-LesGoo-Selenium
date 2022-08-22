@@ -6,10 +6,10 @@ import org.openqa.selenium.By;
 public class LoginPages extends BasePageObject {
 
     By logo = By.xpath("//*[@id=\"__next\"]/div[2]/div/span/img");
-    By signIn = By.xpath("//*[@id=\"__next\"]/div[2]/h3");
+    By signIn = By.xpath("/html/body/div/div[2]/h3");
     By usernameField = By.id("input-username");
     By passwordField = By.id("input-password");
-    By createAccount = By.xpath("//*[@id=\"__next\"]/div[2]/form/div[3]/span[2]");
+    By createAccount = By.xpath("/html/body/div/div[2]/form/div[3]/span[2]");
     By btnSignIn = By.id("btn-signin");
 
     public void isLoginPageDisplayed() {
