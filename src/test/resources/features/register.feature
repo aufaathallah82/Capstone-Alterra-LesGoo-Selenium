@@ -12,7 +12,7 @@ Feature: Register page
     Then Move to sign in page
 
   Scenario: Register user with valid data
-    Given Input username "mikuzo", email "mikuzo@gmail.com", phone "999999999", password "qwerty"
+    Given Input username "nezuko", email "nezuko@gmail.com", phone "878545656989", password "qwerty"
     When Click button sign up
     Then Move to sign in page
 

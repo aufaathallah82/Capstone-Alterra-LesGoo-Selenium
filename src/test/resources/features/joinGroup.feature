@@ -25,6 +25,7 @@ Feature: Join Group page
     And Success direct to Sign in page
 
   Scenario: Can join using valid groupId
+    Then Join group page field is displayed
     When Input valid groupId "9dd7b7e2-a47c-4fbd-91c2-e2f66bde469a"
     And Click button join
     Then Login successfully and direct to group chat

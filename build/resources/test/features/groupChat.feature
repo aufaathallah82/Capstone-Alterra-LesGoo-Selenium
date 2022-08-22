@@ -30,19 +30,3 @@ Feature: Group Chat page
     When Click logout group icon
     Then directed to login page
 
-  Scenario: SOS Button Functionality
-    When Click SOS icon
-    Then Show SOS page
-
-  Scenario: Chat Field Functionality
-    When Click chat field
-    When input "a1!"
-    Then Show "a1!" in chat field
-
-  Scenario: Chat Send Button Functionality
-    When Click chat field
-    When input "a1!"
-    When Click send button
-    Then Show "a1!" in group chat
-
-
