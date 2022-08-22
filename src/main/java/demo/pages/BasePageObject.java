@@ -50,4 +50,9 @@ public class BasePageObject {
     public void alertLogin() {
         getDriver().switchTo().alert().accept();
     }
+
+    public String getTitle() {
+        wait(2000);
+        return getDriver().getTitle();
+    }
 }

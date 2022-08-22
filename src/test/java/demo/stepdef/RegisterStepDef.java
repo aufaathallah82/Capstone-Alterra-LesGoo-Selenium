@@ -5,6 +5,7 @@ import demo.pages.pageobject.RegisterPages;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class RegisterStepDef {
 
@@ -13,7 +14,8 @@ public class RegisterStepDef {
 
     @Then("Register page field is displayed")
     public void isLoginPageDisplayed() {
-        registerPages.registerPageIsDisplayed();
+        Assert.assertEquals(registerPages.getTitle(), "LesGoo | Register");
+//        registerPages.registerPageIsDisplayed();
     }
 
     @When("Click Login now")
@@ -23,7 +25,8 @@ public class RegisterStepDef {
 
     @Then("Move to sign in page")
     public void moveToSignInPage() {
-        loginPages.isLoginPageDisplayed();
+        Assert.assertEquals(loginPages.getTitle(), "LesGoo | Login");
+//        loginPages.isLoginPageDisplayed();
     }
 
     @Given("Input username {string}, email {string}, phone {string}, password {string}")

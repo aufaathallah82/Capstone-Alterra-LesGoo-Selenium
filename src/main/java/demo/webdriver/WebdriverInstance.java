@@ -16,17 +16,18 @@ public class WebdriverInstance {
 
 
     public static void initialize()  {
-        System.setProperty("webdriver.chrome.driver", "Path of the chrome driver");
+//        System.setProperty("webdriver.chrome.driver", "/home/dhandyjoe/Documents/IntellijProject/quality-engineer/Capstone-Alterra-LesGoo-Selenium/chromedriver");
         Map<String, Object> prefs = new HashMap<String, Object>();
         prefs.put("profile.default_content_setting_values.notifications", 1);
 
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("user-data-dir=selenium");
         options.setExperimentalOption("prefs", prefs);
         options.setCapability(CapabilityType.BROWSER_NAME, BrowserType.CHROME);
         webdriver = new ChromeDriver(options);
         webdriver.manage().window().maximize();
         webdriver.get("https://les-goo.vercel.app/login");
-//        webdriver.manage().deleteAllCookies();
+        webdriver.manage().deleteAllCookies();
     }
 
     public static void quit() {

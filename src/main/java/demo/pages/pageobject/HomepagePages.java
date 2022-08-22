@@ -6,19 +6,18 @@ import org.openqa.selenium.By;
 public class HomepagePages extends BasePageObject {
 
     By logo = By.xpath("/html/body/div/div[2]/div[1]/div/span/img");
-    By btnBurger = By.id("btn-burger");
-    By btnAddGroup = By.id("btn-addgroup");
-    By btnJoinGroup = By.id("btn-addgroup");
-    By btnProfile = By.id("btn-profile");
+    By btnBurger = By.xpath("/html/body/div/div[2]/div[1]/div/div[2]/button");
+    By btnAddGroup = By.xpath("/html/body/div/div[2]/div[2]/div");
+    By btnJoinGroup = By.xpath("/html/body/div/div[2]/div[3]/div");
+    By btnProfile = By.xpath("/html/body/div/div[2]/div[1]/div/div[2]/div/div/div[1]");
     By btnLogout = By.id("btn-logout");
-    By dropdownMenu = By.xpath("//*[@id=\"headlessui-menu-items-:R2r6:\"]");
+    By dropdownMenu = By.xpath("/html/body/div/div[2]/div[1]/div/div[2]/div");
 
     public void homepageIsDisplayed() {
-        wait(10000);
-        isPresent(logo);
-        isPresent(btnBurger);
-        isPresent(btnAddGroup);
-        isPresent(btnJoinGroup);
+//        isPresent(logo);
+//        isPresent(btnBurger);
+//        isPresent(btnAddGroup);
+//        isPresent(btnJoinGroup);
     }
 
     public Boolean dropdownMenuDisplayed() {

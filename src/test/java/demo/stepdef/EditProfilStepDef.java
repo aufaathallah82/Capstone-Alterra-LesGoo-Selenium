@@ -18,16 +18,12 @@ public class EditProfilStepDef {
     EditProfilePages editProfilePages = new EditProfilePages();
     ProfilePages profilePages = new ProfilePages();
 
-    @And("move to Edit Profil Page")
-    public void moveToEditProfilPage() {
-        editProfilePages.editProfileIsDisplayed();
-    }
-
     @And("input username {string}, email {string}, phone {string}")
     public void inputUsernameEmailPhone(String username, String email, String phoneNumber) {
         editProfilePages.inputUsernameField(username);
         editProfilePages.inputEmailField(email);
         editProfilePages.inputPhoneField(phoneNumber);
+        editProfilePages.inputProfileImage();
     }
 
     @And("click button save")
@@ -60,5 +56,22 @@ public class EditProfilStepDef {
         editProfilePages.clearUsernameField();
         editProfilePages.clearEmailField();
         editProfilePages.clearPhoneField();
+    }
+
+    @And("Click button ok pop up")
+    public void clickButtonOkPopUp() {
+        editProfilePages.wait(2000);
+        editProfilePages.clickBtnOkPopUp();
+    }
+
+    @And("Click back button on header edit profile")
+    public void clickBackButtonOnHeaderEditProfile() {
+        editProfilePages.btnBtnBackEditProfile();
+    }
+
+    @And("Click button ok pop up delete account")
+    public void clickButtonOkPopUpDeleteAccount() {
+        editProfilePages.wait(2000);
+        editProfilePages.btnBtnOkDeleteAccount();
     }
 }

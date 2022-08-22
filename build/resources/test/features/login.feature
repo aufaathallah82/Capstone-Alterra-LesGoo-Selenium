@@ -9,14 +9,21 @@ Feature: Login page
     Then Move to register page
 
   Scenario: Can Login using registered account have no group
-    Given Input username "nobita" and password "qwerty"
+    Given Input username "troll" and password "qwerty"
     When Click button sign in
     Then Login successfully and direct to homepage
+    When Click burger icon
+    And Show dropdown menu
+    Then Click logout
+    And Success direct to Sign in page
 
   Scenario: Can Login using registered account with have 1 group
     Given Input username "jenny2" and password "qwerty"
     When Click button sign in
     Then Login successfully and direct to group chat
+    When Click group burger icon
+    When Click logout group icon
+    And Success direct to Sign in page
 
   Scenario: Can Login using unregistered account
     Given Input username "qweqweqwe" and password "qweqweqwe"

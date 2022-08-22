@@ -14,7 +14,8 @@ public class ProfilStepDef {
 
     @Then("Profile page field is displayed")
     public void profilePageFieldIsDisplayed() {
-        profilePages.profileIsDisplayed();
+        Assert.assertEquals(profilePages.getTitle(), "LesGoo | Profile");
+//        profilePages.profileIsDisplayed();
     }
 
     @When("Click back button on header profile")
@@ -44,7 +45,8 @@ public class ProfilStepDef {
 
     @Then("Move to edit profile page")
     public void moveToEditProfilePage() {
-        editProfilePages.editProfileIsDisplayed();
+        Assert.assertEquals(profilePages.getTitle(), "LesGoo | Edit Profile");
+//        editProfilePages.editProfileIsDisplayed();
     }
 
     @When("Click delete account button")

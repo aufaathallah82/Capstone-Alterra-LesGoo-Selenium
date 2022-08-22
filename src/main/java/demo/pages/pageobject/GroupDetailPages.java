@@ -12,8 +12,8 @@ public class GroupDetailPages extends BasePageObject {
     By txtDescGroup = By.xpath("//*[@id=\"__next\"]/div[2]/div[2]/p");
     By txtParticipants = By.xpath("//*[@id=\"__next\"]/div[2]/div[3]/h2");
 
-    By dropdownListHumberIcon = By.xpath("//*[@id=\"headlessui-menu-items-:Rkl6:\"]");
-    By profileGroupDetail = By.xpath("//*[@id=\"headlessui-menu-item-:r0:\"]/div[1]");
+    By dropdownListHumberIcon = By.xpath("/html/body/div/div[2]/div[1]/div[1]/div/div");
+    By profileGroupDetail = By.xpath("/html/body/div/div[2]/div[1]/div[1]/div/div/div/div[1]");
     By leaveGroupDetail = By.id("btn-leavegroup");
     By deleteGroupDetail = By.id("btn-deletegroup");
     By logoutGroupDetail = By.id("btn-logout");

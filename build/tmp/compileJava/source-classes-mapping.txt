@@ -1,22 +1,22 @@
-demo/pages/pageobject/NewGroupPages.java
- demo.pages.pageobject.NewGroupPages
 demo/pages/pageobject/RegisterPages.java
  demo.pages.pageobject.RegisterPages
-demo/pages/pageobject/HomepagePages.java
- demo.pages.pageobject.HomepagePages
-demo/pages/pageobject/GroupChatPages.java
- demo.pages.pageobject.GroupChatPages
 demo/pages/pageobject/JoinGroupPages.java
  demo.pages.pageobject.JoinGroupPages
+demo/webdriver/WebdriverInstance.java
+ demo.webdriver.WebdriverInstance
+demo/pages/BasePageObject.java
+ demo.pages.BasePageObject
 demo/pages/pageobject/EditProfilePages.java
  demo.pages.pageobject.EditProfilePages
 demo/pages/pageobject/ProfilePages.java
  demo.pages.pageobject.ProfilePages
+demo/pages/pageobject/HomepagePages.java
+ demo.pages.pageobject.HomepagePages
 demo/pages/pageobject/LoginPages.java
  demo.pages.pageobject.LoginPages
+demo/pages/pageobject/GroupChatPages.java
+ demo.pages.pageobject.GroupChatPages
+demo/pages/pageobject/NewGroupPages.java
+ demo.pages.pageobject.NewGroupPages
 demo/pages/pageobject/GroupDetailPages.java
  demo.pages.pageobject.GroupDetailPages
-demo/pages/BasePageObject.java
- demo.pages.BasePageObject
-demo/webdriver/WebdriverInstance.java
- demo.webdriver.WebdriverInstance

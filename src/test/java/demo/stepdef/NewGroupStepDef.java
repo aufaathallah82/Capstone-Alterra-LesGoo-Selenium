@@ -4,6 +4,7 @@ import demo.pages.pageobject.HomepagePages;
 import demo.pages.pageobject.NewGroupPages;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
 
 public class NewGroupStepDef {
 
@@ -31,5 +32,10 @@ public class NewGroupStepDef {
     @And("clik Button Save")
     public void clikButtonSave() {
         newGroupPages.clickSaveBtn();
+    }
+
+    @When("Click back button on header new group")
+    public void clickBackButtonOnHeaderNewGroup() {
+        newGroupPages.btnBackHomepage();
     }
 }

@@ -2,7 +2,7 @@
 Feature: Group Chat page
 
   Background: Show Group Pace
-    Given Input username "qalesgoo" and password "qwerty"
+    Given Input username "jenny2" and password "qwerty"
     When Click button sign in
     Then Login successfully and direct to group chat
 
@@ -14,6 +14,11 @@ Feature: Group Chat page
     When Click group burger icon
     When Click profile icon
     Then directed to profile
+
+  Scenario: Group detail Button Functionality
+    When Click group burger icon
+    When Click group detail icon
+    Then directed to group detail
 
   Scenario: Leave group Button Functionality
     When Click group burger icon
