@@ -14,7 +14,6 @@ public class NewGroupPages extends BasePageObject {
     By MapStart = By.xpath("//*[@id=\"__next\"]/div[2]/form/div[4]/div");
     By MapEnd = By.xpath("//*[@id=\"__next\"]/div[2]/form/div[5]/div");
     By SaveBtn = By.xpath("//*[@id=\"btn-newgroup\"]/path");
-
     By btnBackHomepage = By.id("back-to-home");
 
     public void newGroupIsDisplayed() {

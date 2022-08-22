@@ -1,6 +1,6 @@
 package demo.pages;
 
-import demo.webdriver.WebdriverInstance;
+import demo.webdriver.WebDriverInstance;
 import org.openqa.selenium.*;
 
 import static java.lang.Thread.sleep;
@@ -8,7 +8,7 @@ import static java.lang.Thread.sleep;
 public class BasePageObject {
 
     public WebDriver getDriver() {
-        return WebdriverInstance.webdriver;
+        return WebDriverInstance.webdriver;
     }
 
     public void clickOn(By element) {
@@ -20,10 +20,6 @@ public class BasePageObject {
     }
 
     public boolean isPresent(By element) {
-        return getDriver().findElement(element).isDisplayed();
-    }
-
-    public boolean isNotPresent(By element) {
         return getDriver().findElement(element).isDisplayed();
     }
 
@@ -52,7 +48,7 @@ public class BasePageObject {
     }
 
     public String getTitle() {
-        wait(2000);
+        wait(1000);
         return getDriver().getTitle();
     }
 }

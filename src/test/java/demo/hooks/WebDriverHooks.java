@@ -1,17 +1,14 @@
 package demo.hooks;
 
-import demo.webdriver.WebdriverInstance;
+import demo.webdriver.WebDriverInstance;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriverException;
 
-public class WebdriverHooks {
+public class WebDriverHooks {
   @Before(value = "@web")
   public void initializeWebdriver() {
-    WebdriverInstance.initialize();
+    WebDriverInstance.initialize();
   }
 
   @After(value = "@web")
@@ -27,6 +24,6 @@ public class WebdriverHooks {
 //
 //    }
 
-    WebdriverInstance.quit();
+    WebDriverInstance.quit();
   }
 }
