@@ -4,6 +4,7 @@
 # About The Project
 When we do a roadtrip with our friends, sometimes we found its difficult to plan, coordinate and alert our friends when we are too far from the packs. That's why we need the app to solve that problem and make our roadtrip easier.
 Test Lesgoo app with QA automation with Selenium and Cucumber, here is the web page and here the [API](https://github.com/dhandyjoe/capstone-alterra-LesGoo-RestAssured) page. Here also the [backend team](https://github.com/dh-atha/LesGooBackend) and [frontend team](https://github.com/SyaifulGhifari/LesGoo) collaboration page
+# Report
 
 # Tools
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
