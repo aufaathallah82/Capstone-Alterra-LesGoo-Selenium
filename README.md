@@ -20,14 +20,11 @@ Test Lesgoo app with QA automation with Selenium and Cucumber, here is the web p
 
 
 ## Documentation
-[Spread sheet API](https://docs.google.com/spreadsheets/d/1yvUPSNu_cFYeve4Y_bsnYWpGjRQqWCiKXkEB6yuAK0k/edit?usp=sharing)
+####  [Website Automation](https://github.com/aufaathallah82/Capstone-Alterra-LesGoo-Selenium)
+####  [API Automation](https://github.com/dhandyjoe/capstone-alterra-LesGoo-RestAssured)
 
-[Spread sheet WEB](https://docs.google.com/spreadsheets/d/19imNpTw5svnppEUPSRCDOAG8U77UBs8xqkXM2sJ9YK0/edit?usp=sharing)
 
-## Web
-![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white)
-
-## 📱 Our teams
+##  Our teams
   [![LinkedIn](https://img.shields.io/badge/-Dhandy-white?style=for-the-badge&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/dhandyjoenathan/)
   [![GitHub](https://img.shields.io/badge/-Dhandy-white?style=for-the-badge&logo=github&logoColor=black)]([https://github.com/dhandyjoe)
   
