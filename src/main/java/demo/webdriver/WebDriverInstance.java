@@ -15,12 +15,12 @@ public class WebDriverInstance {
 
 
     public static void initialize()  {
-//        System.setProperty("webdriver.chrome.driver", "/home/dhandyjoe/Documents/IntellijProject/quality-engineer/Capstone-Alterra-LesGoo-Selenium/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/auv/Capstone-Alterra-LesGoo-Selenium/chromedriver.exe");
         Map<String, Object> prefs = new HashMap<String, Object>();
         prefs.put("profile.default_content_setting_values.notifications", 1);
 
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("user-data-dir=selenium");
+//        options.addArguments("user-data-dir=selenium");
         options.setExperimentalOption("prefs", prefs);
         options.setCapability(CapabilityType.BROWSER_NAME, BrowserType.CHROME);
         webdriver = new ChromeDriver(options);

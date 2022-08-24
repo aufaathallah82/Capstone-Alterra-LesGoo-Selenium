@@ -9,7 +9,7 @@ Feature: Login page
     Then Move to register page
 
   Scenario: Can Login using registered account have no group
-    Given Input username "troll" and password "qwerty"
+    Given Input username "aufa" and password "qwerty"
     When Click button sign in
     Then Login successfully and direct to homepage
     When Click burger icon
