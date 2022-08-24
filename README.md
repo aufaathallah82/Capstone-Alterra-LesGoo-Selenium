@@ -6,6 +6,9 @@ When we do a roadtrip with our friends, sometimes we found its difficult to plan
 Test Lesgoo app with QA automation with Selenium and Cucumber, here is the web page and here the [API](https://github.com/dhandyjoe/capstone-alterra-LesGoo-RestAssured) page. Here also the [backend team](https://github.com/dh-atha/LesGooBackend) and [frontend team](https://github.com/SyaifulGhifari/LesGoo) collaboration page
 # Report
 
+## mvn clean verify
+![mvn clean verify alta capstone web auto](https://user-images.githubusercontent.com/64890776/186341360-0746b918-209f-435c-a309-82cbb13fbe77.jpg)
+
 # Tools
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 ![IntellijIDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
