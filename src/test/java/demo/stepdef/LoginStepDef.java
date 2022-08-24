@@ -44,6 +44,7 @@ public class LoginStepDef {
 
     @Then("Login successfully and direct to homepage")
     public void loginSuccessfullyAndDirectToHomepage() {
+        homepagePages.wait(25000);
         Assert.assertEquals(homepagePages.getTitle(), "LesGoo | Make Your Roadtrip Easier");
     }
 
